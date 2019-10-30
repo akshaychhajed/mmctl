@@ -10,14 +10,14 @@ import (
 )
 
 var DocsCmd = &cobra.Command{
-	Use: "docs",
+	Use:   "docs",
 	Short: "Generates mmctl documentation",
-	Args: cobra.NoArgs,
-	RunE: docsCmdF,
+	Args:  cobra.NoArgs,
+	RunE:  docsCmdF,
 }
 
 func init() {
-	DocsCmd.Flags().String("directory", "docs", "The directory where the docs would be generated in.")
+	DocsCmd.Flags().StringP("directory", "d", "docs", "The directory where the docs would be generated in.")
 
 	RootCmd.AddCommand(DocsCmd)
 }
