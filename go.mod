@@ -3,6 +3,7 @@ module github.com/mattermost/mmctl
 go 1.12
 
 require (
+	github.com/cpuguy83/go-md2man v1.0.10 // indirect
 	github.com/golang/mock v1.2.0
 	github.com/magefile/mage v1.8.0
 	github.com/mattermost/mattermost-server v0.0.0-20190417144445-84a59ddb3928
